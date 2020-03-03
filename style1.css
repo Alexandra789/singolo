@@ -1,0 +1,156 @@
+@import './assets/fonts/fonts.css';
+.container {
+    width: 1020px;
+}
+
+ul,
+li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-bar {
+    height: 95px;
+    color: #ffffff;
+    border-bottom: 5px solid #323746;
+    background-color: #2d303a;
+}
+
+.logo {
+    font-size: 25px;
+    margin: 29px 24px;
+}
+
+.mg {
+    margin: 6px 109px;
+}
+
+.navigation {
+    margin: 0px -87px;
+}
+
+span {
+    margin: 0px 13px;
+}
+
+.logo>span {
+    color: #f06c64;
+    margin: 0px;
+}
+
+.menu-item,
+.logo {
+    text-transform: uppercase;
+    margin-top: 29px;
+    margin-bottom: 35px;
+}
+
+.menu-item a {
+    font-family: 'Lato-Black';
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.menu-item a:hover {
+    text-decoration: none;
+    color: #f06c64;
+}
+
+.section-slider {
+    height: 600px;
+    position: relative;
+    background-image: url('./assets/image/slider-bg-img.png');
+}
+
+.slider .prev,
+.slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -29px;
+    margin-left: 10px;
+    margin-right: 25px;
+    color: #ca4549;
+    font-weight: bold;
+    font-size: 37px;
+    transition: 0.6s ease;
+}
+
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.slider .prev:hover,
+.slider .next:hover {
+    color: #ffffff;
+}
+
+.section-slider {
+    border-bottom: 5px solid #ea676b;
+}
+
+.phone-vertical {
+    margin: 53px 70px 51px 81px;
+    width: 240px;
+    height: 484px;
+}
+
+.phone-horizontal {
+    margin-right: 55px;
+    width: 485px;
+    height: 240px;
+}
+
+.services {
+    background-color: #f2f2f2;
+    font-family: 'Lato-Black';
+    height: 494px;
+}
+
+.title-section {
+    margin-top: 60px;
+    font-size: 30px;
+    margin-left: 24px;
+    color: #666d89;
+}
+
+.text {
+    font-size: 18px;
+    margin-left: 26px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-family: 'Lato-Light';
+    color: #767e9e;
+}
+
+.title-cols {
+    margin: 47px 0px 0px 38px;
+    font-size: 18px;
+    color: #666d89;
+}
+
+.text-cols {
+    line-height: 21px;
+    margin: 11px -50px 0px 40px;
+    padding-bottom: -11px;
+    font-size: 12px;
+    color: #767e9e;
+    font-family: 'Lato-Regular';
+}
+
+.image-wrapper {
+    width: 62px;
+    height: 62px;
+    border: 2px solid #666d89;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px -36px 0px 39px;
+}
+
+.second {
+    margin: -20px 0px 0px -14px;
+}
