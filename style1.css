@@ -106,7 +106,8 @@ span {
 .services {
     background-color: #f2f2f2;
     font-family: 'Lato-Black';
-    height: 494px;
+    height: 500px;
+    border-bottom: 5px solid #ffffff;
 }
 
 .title-section {
