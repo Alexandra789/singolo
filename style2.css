@@ -1,0 +1,146 @@
+@import './assets/fonts/fonts.css';
+.container {
+    width: 1020px;
+}
+
+.portfolio {
+    background-color: #2d303a;
+    height: 870px;
+    border-bottom: 5px solid #323746;
+}
+
+.portfolio-title {
+    font-size: 30px;
+    margin: 60px 0px 0px 24px;
+    font-family: 'Lato-Black';
+    color: #666d89;
+}
+
+.portfolio-text {
+    margin: 20px 0px 0px 25px;
+    font-size: 18px;
+    font-family: 'Lato-Light';
+    color: #767e9e;
+}
+
+.buttons {
+    margin: 9px 0px 0px 26px;
+}
+
+.button {
+    font-family: 'Lato-Regular';
+    font-size: 12px;
+    color: #767e9e;
+    background-color: #2d303a;
+    border: 1px solid #767e9e;
+    border-radius: 4px;
+    margin-right: 7px;
+}
+
+.active {
+    color: #afafb1;
+    border: 1px solid #afafb1;
+    /* margin-right: 7px; */
+}
+
+.button:hover {
+    color: #afafb1;
+    border: 1px solid #afafb1;
+}
+
+.portfolio-images {
+    margin: 21px 0px 0px 24px;
+    height: 605px;
+    overflow: hidden;
+}
+
+.image-item-portfolio-section {
+    margin-right: 16px;
+}
+
+.second-line {
+    margin: 19px 0px 20px 0px;
+}
+
+.about-us {
+    background-color: #f2f2f2;
+    height: 735px;
+    border-bottom: 5px solid #ffffff;
+}
+
+.worker-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    margin: 46px 0px 0px 24px;
+}
+
+.content-wrapper {
+    width: 300px;
+}
+
+.about-us-title {
+    margin: 59px 0px 0px 24px;
+    font-size: 30px;
+    font-family: 'Lato-Black';
+    color: #666d89;
+}
+
+.about-us-text {
+    margin: 19px 0px 0px 25px;
+    font-size: 18px;
+    font-family: 'Lato-Light';
+    color: #767e9e;
+    line-height: 29px;
+}
+
+.about-us-images {
+    margin: 47px 0px 0px 26px;
+}
+
+.image-item-about-us-section {
+    margin-right: 15px;
+}
+
+.name {
+    font-family: 'Lato-Black';
+    font-size: 18px;
+    color: #666d89;
+    margin-top: 16px;
+}
+
+.description {
+    line-height: 22px;
+    font-family: 'Lato-Regular';
+    font-size: 12px;
+    color: #767e9e;
+}
+
+.icons {
+    display: flex;
+}
+
+.icons a {
+    margin: 6px 0px 0px 6px;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #666d89;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 50px -36px 0px 39px; */
+}
+
+
+/* .image-first-item {
+    margin: 46px 0px 0px 26px;
+}
+
+.image-second-item {
+    margin: 46px 0px 0px 3px;
+}
+
+.image-third-item {
+    margin: 46px 0px 0px -15px;
+} */
