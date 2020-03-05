@@ -1,0 +1,21 @@
+.container {
+    width: 1020px;
+}
+
+.get-a-quote {
+    height: 655px;
+    background-color: #f06c64;
+    border-bottom: 5px solid #ea676b;
+}
+
+.get-a-quote-title {
+    color: #f0d8d9;
+    font-size: 30px;
+    font-family: 'Lato-Black';
+}
+
+.get-a-quote-text {
+    color: #f0d8d9;
+    font-size: 18px;
+    font-family: 'Lato-Light';
+}
