@@ -115,7 +115,11 @@
 }
 
 .description {
+    text-align: justify;
     line-height: 22px;
+    width: 300px;
+    height: 44px;
+    overflow: hidden;
     font-family: 'Lato-Regular';
     font-size: 12px;
     color: #767e9e;
