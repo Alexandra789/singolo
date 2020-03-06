@@ -87,10 +87,15 @@
 }
 
 .about-us-text {
-    margin: 19px 0px 0px 25px;
+    width: 950px;
+    height: 58px;
+    overflow: hidden;
+    margin: 19px 0px 0px 24px;
     font-size: 18px;
     font-family: 'Lato-Light';
+    letter-spacing: 0.px;
     color: #767e9e;
+    text-align: justify;
     line-height: 29px;
 }
 
