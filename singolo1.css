@@ -118,6 +118,9 @@ span {
 }
 
 .text {
+    width: 940px;
+    overflow: hidden;
+    height: 53px;
     font-size: 18px;
     margin-left: 26px;
     margin-top: 20px;
