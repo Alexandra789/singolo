@@ -74,6 +74,9 @@
 }
 
 .about-us-title {
+    width:945px;
+    height:37px;
+    overflow:hidden; 	
     margin: 59px 0px 0px 24px;
     font-size: 30px;
     font-family: 'Lato-Black';
