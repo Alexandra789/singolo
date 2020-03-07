@@ -40,7 +40,6 @@
 .active {
     color: #afafb1;
     border: 1px solid #afafb1;
-    /* margin-right: 7px; */
 }
 
 .button:hover {
@@ -138,18 +137,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: 50px -36px 0px 39px; */
 }
 
-
-/* .image-first-item {
-    margin: 46px 0px 0px 26px;
+.icons a:hover{
+    border: 1px solid #ffffff;
 }
-
-.image-second-item {
-    margin: 46px 0px 0px 3px;
-}
-
-.image-third-item {
-    margin: 46px 0px 0px -15px;
-} */
