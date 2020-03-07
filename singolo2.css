@@ -37,11 +37,6 @@
     margin-right: 7px;
 }
 
-.active {
-    color: #afafb1;
-    border: 1px solid #afafb1;
-}
-
 .button:hover {
     color: #afafb1;
     border: 1px solid #afafb1;
