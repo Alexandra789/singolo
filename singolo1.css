@@ -60,7 +60,7 @@ span {
 .section-slider {
     height: 600px;
     position: relative;
-    background-image: url('./assets/image/slider-bg-img.png');
+    background-image: url('./assets/images/slider-bg-img.png');
 }
 
 .slider .prev,
