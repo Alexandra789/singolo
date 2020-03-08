@@ -69,14 +69,30 @@
     margin: 46px 0px 0px 24px;
 }
 
+.icons>a.facebook {
+    margin: 4px 0px 0px 1px;
+}
+
+.icons>a.twitter {
+    margin: 4px 0px 0px 9px;
+}
+
+.icons>a.google {
+    margin: 4px 0px 0px 8px;
+}
+
+.icons>a.linkedin {
+    margin: 4px 0px 0px 8px;
+}
+
 .content-wrapper {
     width: 300px;
 }
 
 .about-us-title {
-    width:945px;
-    height:37px;
-    overflow:hidden; 	
+    width: 945px;
+    height: 37px;
+    overflow: hidden;
     margin: 59px 0px 0px 24px;
     font-size: 30px;
     font-family: 'Lato-Black';
@@ -137,6 +153,6 @@
     align-items: center;
 }
 
-.icons a:hover{
+.icons a:hover {
     border: 1px solid #ffffff;
 }
