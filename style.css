@@ -57,10 +57,34 @@ span {
     color: #f06c64;
 }
 
+.active {
+    color: #f06c64 !important;
+}
+
+.active-btn {
+    color: #ffffff !important;
+}
+
+.active-img {
+    border: 5px solid #F06C64;
+}
+
+.item {
+    display: none;
+}
+
 .section-slider {
-    height: 600px;
+    height: 595px;
+    /* width: 100%; */
     position: relative;
-    background-image: url('./assets/images/slider-bg-img.png');
+}
+
+.pink {
+    background-image: url('./assets/images/slider-bg-img.png') !important;
+}
+
+.blue {
+    background-image: url('./assets/images/slider-bg.png') !important;
 }
 
 .slider .prev,
@@ -69,12 +93,13 @@ span {
     position: absolute;
     top: 50%;
     margin-top: -29px;
-    margin-left: 10px;
-    margin-right: 25px;
+    margin-left: 26px;
+    margin-right: 289px;
     color: #ca4549;
     font-weight: bold;
     font-size: 37px;
     transition: 0.6s ease;
+    user-select: none;
 }
 
 .slider .next {
@@ -91,8 +116,67 @@ span {
     border-bottom: 5px solid #ea676b;
 }
 
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.fade:not(.show) {
+    opacity: 1;
+}
+
+.image-bg-phone {
+    position: absolute;
+    width: 156.02px;
+    height: 314px;
+    left: 481px;
+    top: 152px;
+    opacity: 0.5;
+}
+
+.left {
+    left: 848px;
+}
+
+.image-phone {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    position: absolute;
+    width: 254.91px;
+    height: 513px;
+    left: 620px;
+    top: 43px;
+}
+
 .phone-vertical {
-    margin: 53px 70px 51px 81px;
+    margin: 53px 70px 51px 96px;
     width: 240px;
     height: 484px;
 }
@@ -101,6 +185,11 @@ span {
     margin-right: 55px;
     width: 485px;
     height: 240px;
+}
+
+.phone-vertical:hover,
+.phone-horizontal:hover {
+    cursor: pointer;
 }
 
 .services {
@@ -192,7 +281,7 @@ span {
     margin: 9px 0px 0px 26px;
 }
 
-.button {
+.portfolio-image__button {
     font-family: 'Lato-Regular';
     font-size: 12px;
     color: #767e9e;
@@ -202,9 +291,14 @@ span {
     margin-right: 7px;
 }
 
-.button:hover {
+.portfolio-image__button:hover {
     color: #afafb1;
     border: 1px solid #afafb1;
+}
+
+button:not(:disabled) {
+    cursor: pointer;
+    outline: none;
 }
 
 .portfolio-images {
@@ -215,6 +309,7 @@ span {
 
 .image-item-portfolio-section {
     margin-right: 16px;
+    margin-bottom: 16px;
 }
 
 .second-line {
@@ -364,6 +459,7 @@ input {
     height: 40px;
     margin-bottom: 14px;
     border: none;
+    outline: none;
 }
 
 #textarea {
@@ -377,6 +473,7 @@ input {
     font-size: 12px;
     padding-top: 9px;
     resize: none;
+    outline: none;
 }
 
 input::placeholder,
