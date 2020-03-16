@@ -3,9 +3,11 @@ const anchors = document.querySelectorAll('a[href*="#"]');
 for (let anchor of anchors) {
     anchor.addEventListener('click', function(e) {
         anchors.forEach(el => {
-            if (el.classList.contains('active')) { el.classList.remove("active"); }
+            if (el.classList.contains('active')) {
+                el.classList.remove('active');
+            }
         })
-        anchor.classList.add("active");
+        anchor.classList.add('active');
         e.preventDefault();
         const blockID = anchor.getAttribute('href');
         document.querySelector('' + blockID).scrollIntoView({
@@ -130,9 +132,11 @@ const images = document.querySelectorAll('.image-item-portfolio-section')
 for (let image of images) {
     image.addEventListener('click', function(e) {
         images.forEach(el => {
-            if (el.classList.contains('active-img')) { el.classList.remove("active-img"); }
+            if (el.classList.contains('active-img')) {
+                el.classList.remove('active-img');
+            }
         })
-        image.classList.add("active-img");
+        image.classList.add('active-img');
         e.preventDefault();
 
     })
