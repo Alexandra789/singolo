@@ -62,13 +62,15 @@ function showSlides(n) {
 
 let phoneVer = document.getElementsByClassName('phone-vertical');
 phoneVer[0].addEventListener('click', function(e) {
-    phoneVer[0].src == "file:///C:/Users/user/Desktop/singolo/assets/images/phone-vertical.png" ?
+     phoneVer[0].src == "file:///C:/Users/user/Desktop/singolo/assets/images/phone-vertical.png" || 
+      phoneVer[0].src == "https://alexandra789.github.io/singolo/assets/images/phone-vertical.png" ?
         phoneVer[0].src = "./assets/images/phone-vertical-off.png" : phoneVer[0].src = "./assets/images/phone-vertical.png";
 })
 
 let phoneHoriz = document.getElementsByClassName('phone-horizontal');
 phoneHoriz[0].addEventListener('click', function(e) {
-    phoneHoriz[0].src == "file:///C:/Users/user/Desktop/singolo/assets/images/phone-horizontal.png" ?
+    phoneHoriz[0].src == "file:///C:/Users/user/Desktop/singolo/assets/images/phone-horizontal.png" ||
+        phoneHoriz[0].src == "https://alexandra789.github.io/singolo/assets/images/phone-horizontal.png" ?
         phoneHoriz[0].src = "./assets/images/phone-horizontal-off.png" : phoneHoriz[0].src = "./assets/images/phone-horizontal.png";
 })
 
