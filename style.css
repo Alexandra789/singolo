@@ -826,8 +826,13 @@ input {
 }
 
 @media screen and (min-width:375px) and (max-width:767px) {
+    .logo {
+        margin-top: 20px;
+        margin-left: 120px;
+    }
     .menu-bar {
         height: 71px;
+        overflow: hidden;
     }
     .section-slider {
         height: 220.7px;
@@ -992,9 +997,14 @@ input {
     }
 }
 
-@media screen and (min-width:320px) and (max-width:375px) {
+@media screen and (min-width:320px) and (max-width:374px) {
+    .logo {
+        margin-top: 20px;
+        margin-left: 90px;
+    }
     .menu-bar {
         height: 71px;
+        overflow: hidden;
     }
     .section-slider {
         height: 220.7px;
