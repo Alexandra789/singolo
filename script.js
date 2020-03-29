@@ -3,11 +3,9 @@ const anchors = document.querySelectorAll('a[href*="#"]');
 for (let anchor of anchors) {
     anchor.addEventListener('click', function(e) {
         anchors.forEach(el => {
-            if (el.classList.contains('active')) {
-                el.classList.remove('active');
-            }
+            if (el.classList.contains('active')) { el.classList.remove("active"); }
         })
-        anchor.classList.add('active');
+        anchor.classList.add("active");
         e.preventDefault();
         const blockID = anchor.getAttribute('href');
         document.querySelector('' + blockID).scrollIntoView({
@@ -62,15 +60,13 @@ function showSlides(n) {
 
 let phoneVer = document.getElementsByClassName('phone-vertical');
 phoneVer[0].addEventListener('click', function(e) {
-     phoneVer[0].src == "file:///C:/Users/user/Desktop/singolo/assets/images/phone-vertical.png" || 
-      phoneVer[0].src == "https://alexandra789.github.io/singolo/assets/images/phone-vertical.png" ?
+    phoneVer[0].src == "file:///C:/Users/user/Desktop/singolo/assets/images/phone-vertical.png" ?
         phoneVer[0].src = "./assets/images/phone-vertical-off.png" : phoneVer[0].src = "./assets/images/phone-vertical.png";
 })
 
 let phoneHoriz = document.getElementsByClassName('phone-horizontal');
 phoneHoriz[0].addEventListener('click', function(e) {
-    phoneHoriz[0].src == "file:///C:/Users/user/Desktop/singolo/assets/images/phone-horizontal.png" ||
-        phoneHoriz[0].src == "https://alexandra789.github.io/singolo/assets/images/phone-horizontal.png" ?
+    phoneHoriz[0].src == "file:///C:/Users/user/Desktop/singolo/assets/images/phone-horizontal.png" ?
         phoneHoriz[0].src = "./assets/images/phone-horizontal-off.png" : phoneHoriz[0].src = "./assets/images/phone-horizontal.png";
 })
 
@@ -134,11 +130,9 @@ const images = document.querySelectorAll('.image-item-portfolio-section')
 for (let image of images) {
     image.addEventListener('click', function(e) {
         images.forEach(el => {
-            if (el.classList.contains('active-img')) {
-                el.classList.remove('active-img');
-            }
+            if (el.classList.contains('active-img')) { el.classList.remove("active-img"); }
         })
-        image.classList.add('active-img');
+        image.classList.add("active-img");
         e.preventDefault();
 
     })
@@ -151,7 +145,7 @@ const subject = document.getElementsByClassName('subject');
 const description = document.getElementsByClassName('description-txt');
 
 button[0].addEventListener('click', function(e) {
-    console.log(description[0]);
+    e.preventDefault();
     if (title[0].value != '' && email[0].value != '') {
         if (subject[0].value == '' && description[0].value == '') {
             alert('Письмо отправлено\nБез темы\nБез описания\nОК');
@@ -168,3 +162,11 @@ button[0].addEventListener('click', function(e) {
         }
     }
 })
+
+const menuToggle = document.querySelector('#menu-togle');
+const mobileNavContainer = document.querySelector('#mobile-nav');
+
+menuToggle.onclick = function() {
+    menuToggle.classList.toggle('menu-icon-active');
+    mobileNavContainer.classList.toggle('mobile-nav--active');
+}
