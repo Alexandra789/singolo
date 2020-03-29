@@ -199,6 +199,14 @@ span {
     border-bottom: 5px solid #ffffff;
 }
 
+.mg-top {
+    margin-top: 5px;
+}
+
+.services-item {
+    display: inline-flex;
+}
+
 .title-section {
     margin-top: 60px;
     font-size: 30px;
@@ -228,8 +236,9 @@ span {
 }
 
 .text-cols {
+    width: 220px;
     line-height: 21px;
-    margin: 9px -50px 0px 40px;
+    margin: 9px -9px -30px 40px;
     height: 65px;
     overflow: hidden;
     font-size: 12px;
@@ -246,11 +255,13 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px -36px 0px 39px;
+    margin: 55px -22px 0px 25px;
 }
 
 .stars {
-    margin-left: 46px;
+    margin-left: 25px;
+    margin-top: 52px;
+    margin-right: -16px;
 }
 
 .second {
@@ -482,12 +493,10 @@ input::placeholder,
     color: #f48c8f;
 }
 
-.button-wrapper {
-    text-align-last: center;
-}
-
 .submit {
     border-radius: 4px;
+    width: 136px;
+    height: 38px;
     border: none;
     background-color: #d6564f;
     color: #f48c8f;
@@ -571,9 +580,596 @@ input {
     left: 60%;
     word-spacing: 39%;
     margin-top: 15px;
-    margin-left: 25px;
+    margin-left: -200px;
 }
 
 .footer-icons {
     margin: 2px 0px 0px 3px;
+}
+
+.mobile-nav {
+    z-index: 9;
+    display: block;
+    position: absolute;
+    right: -350px;
+    top: 0;
+    height: 100%;
+    width: 350px;
+    padding: 50px;
+    background-color: rgba(11, 92, 65, 0.7);
+    transition: transform 0.4s ease-in;
+}
+
+.menu-icon {
+    z-index: 19;
+    position: relative;
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.menu-icon-line {
+    position: relative;
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+}
+
+.menu-icon-line::before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: '';
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.menu-icon-line::after {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    content: '';
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.menu-icon.menu-icon-active .menu-icon-line {
+    background-color: transparent;
+}
+
+.menu-icon.menu-icon-active .menu-icon-line::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.menu-icon.menu-icon-active .menu-icon-line::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.mobile-nav--active {
+    transform: translateX(-100%);
+}
+
+.mobile-nav__title {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: #f6d142;
+}
+
+.mobile-nav__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-nav__item {
+    margin-bottom: 30px;
+}
+
+.mobile-nav__link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.mobile-nav__link:hover {
+    color: #ffd600;
+}
+
+.menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width:768px) and (max-width:1020px) {
+    .logo {
+        position: absolute;
+        top: 5px;
+        margin: 29px 24px;
+        font-weight: bold;
+        letter-spacing: -0.03em;
+    }
+    .section-slider {
+        height: 452px;
+    }
+    .phone-vertical {
+        position: absolute;
+        width: 185.71px;
+        height: 388.07px;
+        left: 35.33px;
+        top: -13.32px;
+    }
+    .phone-horizontal {
+        position: absolute;
+        width: 292.63px;
+        height: 145.67px;
+        left: 355.67px;
+        top: 150.34px;
+    }
+    .slider .prev,
+    .slider .next {
+        font-size: 25px;
+        margin-right: 65px;
+    }
+    .image-phone {
+        position: absolute;
+        left: 300px;
+        width: 199px;
+        height: 410px;
+        top: 35px;
+    }
+    .image-bg-phone {
+        position: absolute;
+        width: 145px;
+        height: 275px;
+        left: 170px;
+        top: 95px;
+    }
+    .image-bg-phone.left {
+        left: 478px;
+    }
+    .services {
+        height: 677px;
+    }
+    .text {
+        width: 687px;
+        height: 99px;
+    }
+    .title-cols,
+    .text-cols {
+        width: 220px;
+    }
+    .services-item {
+        margin-top: -15px;
+    }
+    .portfolio {
+        height: 1102px;
+    }
+    .image-item-portfolio-section {
+        width: 206px;
+    }
+    .portfolio-images {
+        height: 794px;
+    }
+    .about-us-text {
+        height: 100px;
+        width: 688px;
+    }
+    .content-wrapper {
+        width: 360px;
+    }
+    .imgs {
+        width: 219px;
+        height: 219px;
+        margin-right: 15px;
+    }
+    .description {
+        width: 219px;
+        height: 72px;
+        margin: 0px;
+    }
+    .worker-wrapper {
+        display: flex;
+        width: 0px;
+        margin: 15px 0px 0px 24px;
+    }
+    .about-us {
+        height: 669px;
+    }
+    .mg-left {
+        margin-left: 0px;
+    }
+    .get-a-quote {
+        height: 631px;
+    }
+    .get-a-quote-text {
+        width: 689px;
+        height: 96px;
+    }
+    input {
+        width: 442px;
+        height: 38px;
+    }
+    #textarea {
+        width: 442px;
+        height: 159px;
+    }
+    form {
+        width: 442px;
+        height: 309px;
+        margin: 10px 0px 0px 25px
+    }
+    .contact-info-section {
+        margin-top: -40px;
+    }
+    .contact-info {
+        width: 221px;
+    }
+    .wrap {
+        flex-wrap: nowrap;
+    }
+    .social-icons {
+        margin-top: 15px;
+        margin-left: -180px;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:767px) {
+    .menu-bar {
+        height: 71px;
+    }
+    .section-slider {
+        height: 220.7px;
+    }
+    .services {
+        height: 1032px;
+    }
+    .phone-vertical {
+        position: absolute;
+        width: 84.24px;
+        height: 178.49px;
+        left: -30px;
+        top: -30.32px;
+    }
+    .phone-horizontal {
+        position: absolute;
+        width: 135.96px;
+        height: 72px;
+        left: 180px;
+        top: 70.34px;
+    }
+    .slider .prev,
+    .slider .next {
+        margin-right: 30px;
+    }
+    .image-phone {
+        position: absolute;
+        left: 145px;
+        width: 85px;
+        height: 193px;
+        top: 17px;
+    }
+    .image-bg-phone {
+        position: absolute;
+        width: 58px;
+        height: 123px;
+        left: 90px;
+        top: 52px;
+    }
+    .image-bg-phone.left {
+        left: 224px;
+    }
+    .slider .prev {
+        margin-left: 5px;
+    }
+    .title-section {
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    .text {
+        width: 314px;
+        height: 222.63px;
+        margin-left: 15px;
+    }
+    .title-cols,
+    .text-cols {
+        width: 220px;
+    }
+    .services-item {
+        display: flex;
+    }
+    .services-items {
+        margin-top: -65px;
+        margin-left: -15px;
+    }
+    .portfolio {
+        height: 844px;
+    }
+    .portfolio-title {
+        margin-left: 15px;
+    }
+    .portfolio-text {
+        width: 315px;
+        margin-left: 15px;
+    }
+    .image-item-portfolio-section {
+        width: 151px;
+        height: 128px;
+    }
+    .portfolio-images {
+        height: 555px;
+        width: 375px;
+        overflow: hidden;
+        margin-left: 15px;
+    }
+    .about-us-text {
+        width: 315px;
+        height: 185px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
+    .about-us-title {
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    .content-wrapper {
+        width: 360px;
+        margin-bottom: 40px;
+    }
+    .imgs {
+        width: 314px;
+        height: 314px;
+    }
+    .description {
+        margin-bottom: -20px;
+        width: 314px;
+        height: 67px;
+    }
+    .worker-wrapper {
+        display: block;
+        width: 0px;
+        margin: 15px 0px 0px 16px;
+    }
+    .about-us {
+        height: 1754px;
+    }
+    .mg-left {
+        margin-left: 0px;
+    }
+    .get-a-quote {
+        height: 969px;
+    }
+    .get-a-quote-title {
+        margin-left: 15px;
+    }
+    .get-a-quote-text {
+        width: 315px;
+        height: 220px;
+        margin-left: 15px;
+    }
+    input {
+        width: 315px;
+        height: 38px;
+    }
+    #textarea {
+        width: 315px;
+        height: 159px;
+    }
+    form {
+        width: 315px;
+        height: 309px;
+        margin: -25px 0px 50px 15px;
+    }
+    .contact-info-section {
+        margin-top: -15px;
+        margin-left: 30px;
+    }
+    .contact-info {
+        width: 315px;
+        height: 94px;
+    }
+    .wrap {
+        flex-wrap: wrap;
+    }
+    .submit {
+        width: 315px;
+        height: 50px
+    }
+    .social-icons {
+        margin-top: 15px;
+        margin-left: -150px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:375px) {
+    .menu-bar {
+        height: 71px;
+    }
+    .section-slider {
+        height: 220.7px;
+    }
+    .services {
+        height: 1032px;
+    }
+    .phone-vertical {
+        position: absolute;
+        width: 77.24px;
+        height: 161.49px;
+        left: -39px;
+        top: -24.32px;
+    }
+    .phone-horizontal {
+        position: absolute;
+        width: 117.96px;
+        height: 64px;
+        left: 147px;
+        top: 70.34px;
+    }
+    .slider .prev,
+    .slider .next {
+        margin-right: 30px;
+    }
+    .image-phone {
+        position: absolute;
+        left: 120px;
+        width: 85px;
+        height: 193px;
+        top: 17px;
+    }
+    .image-bg-phone {
+        position: absolute;
+        width: 58px;
+        height: 123px;
+        left: 67px;
+        top: 52px;
+    }
+    .image-bg-phone.left {
+        left: 197px;
+    }
+    .slider .prev {
+        margin-left: 5px;
+    }
+    .title-section {
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    .text {
+        width: 260px;
+        height: 222.63px;
+        margin-left: 15px;
+    }
+    .title-cols,
+    .text-cols {
+        width: 175px;
+    }
+    .services-item {
+        display: flex;
+    }
+    .services-items {
+        margin-top: -20px;
+        margin-left: -15px;
+    }
+    .portfolio {
+        height: 844px;
+    }
+    .portfolio-title {
+        margin-left: 15px;
+    }
+    .portfolio-text {
+        width: 290px;
+        margin-left: 15px;
+    }
+    .image-item-portfolio-section {
+        width: 124px;
+        height: 79px;
+    }
+    .buttons {
+        margin: 5px 0px 0px 20px;
+    }
+    .portfolio-image__button {
+        margin-left: -5px;
+    }
+    .portfolio-images {
+        height: 555px;
+        width: 375px;
+        overflow: hidden;
+        margin-left: 15px;
+    }
+    .about-us-text {
+        width: 260px;
+        height: 224px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
+    .about-us-title {
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    .content-wrapper {
+        width: 360px;
+        margin-bottom: 40px;
+    }
+    .imgs {
+        width: 260px;
+        height: 260px;
+    }
+    .description {
+        margin-bottom: -5px;
+        width: 260px;
+    }
+    .worker-wrapper {
+        display: block;
+        width: 0px;
+        margin: 15px 0px 0px 16px;
+    }
+    .about-us {
+        height: 1754px;
+    }
+    .mg-left {
+        margin-left: 0px;
+    }
+    .get-a-quote {
+        height: 969px;
+    }
+    .get-a-quote-title {
+        margin-left: 15px;
+    }
+    .get-a-quote-text {
+        width: 260px;
+        height: 270px;
+        margin-left: 15px;
+    }
+    input {
+        width: 260px;
+        height: 38px;
+    }
+    #textarea {
+        width: 260px;
+        height: 159px;
+    }
+    form {
+        width: 260px;
+        height: 309px;
+        margin: -25px 0px 50px 15px;
+    }
+    .contact-info-section {
+        margin-top: -15px;
+        margin-left: 30px;
+    }
+    .contact-info {
+        width: 260px;
+        height: 107px;
+    }
+    .contacts-wrapper {
+        margin: 22px 0px 0px 0px;
+    }
+    .wrap {
+        flex-wrap: wrap;
+    }
+    .submit {
+        width: 260px;
+        height: 50px
+    }
+    .social-icons {
+        margin-left: -545px;
+    }
+    .icons {
+        margin-top: 10px;
+        display: flex;
+    }
+    .mobile-nav {
+        width: 320px;
+        right: -320px;
+    }
 }
